@@ -1,0 +1,19 @@
+html, body, ul, li {
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+form {
+	display: table-row-group;
+}
+
+.conteiner {
+	width: 70%;
+	margin-left: 15%;
+}
