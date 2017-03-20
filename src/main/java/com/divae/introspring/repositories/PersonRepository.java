@@ -1,4 +1,4 @@
-package br.com.IntroSpring.model.repositories;
+package com.divae.introspring.repositories;
 
 import java.util.List;
 
@@ -6,10 +6,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import br.com.IntroSpring.model.Introducao;
+import com.divae.introspring.model.Person;
 
 @Repository
-public interface IntroducaoRepository extends JpaRepository<Introducao,Long>{
+public interface PersonRepository extends JpaRepository<Person,Long>{
 	
-	//List<Customer> findByName(@Param("name") String name);
+	List<Person> findByFirstname(@Param("name") String name);
 }

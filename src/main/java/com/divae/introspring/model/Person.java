@@ -1,4 +1,4 @@
-package br.com.IntroSpring.model;
+package com.divae.introspring.model;
 
 import java.math.BigDecimal;
 
@@ -7,14 +7,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Introducao {
+public class Person {
 
 	private Long id;
-	private String nome;
-	private String sobreNome;
+	private String firstname;
+	private String lastname;
 	private String email;
-	private String telefone;
-	private BigDecimal valor;
+	private String phone;
+	private BigDecimal salary;
 
 	@Id
 	@GeneratedValue
@@ -26,20 +26,24 @@ public class Introducao {
 		this.id = id;
 	}
 
-	public String getNome() {
-		return nome;
+
+	
+	
+
+	public String getFirstname() {
+		return firstname;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
 	}
 
-	public String getSobreNome() {
-		return sobreNome;
+	public String getLastname() {
+		return lastname;
 	}
 
-	public void setSobreNome(String sobreNome) {
-		this.sobreNome = sobreNome;
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
 	}
 
 	public String getEmail() {
@@ -50,20 +54,20 @@ public class Introducao {
 		this.email = email;
 	}
 
-	public String getTelefone() {
-		return telefone;
+	public String getPhone() {
+		return phone;
 	}
 
-	public void setTelefone(String telefone) {
-		this.telefone = telefone;
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
-	public BigDecimal getValor() {
-		return valor;
+	public BigDecimal getSalary() {
+		return salary;
 	}
 
-	public void setValor(BigDecimal valor) {
-		this.valor = valor;
+	public void setSalary(BigDecimal salary) {
+		this.salary = salary;
 	}
 
 	@Override
@@ -82,7 +86,7 @@ public class Introducao {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Introducao other = (Introducao) obj;
+		Person other = (Person) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;
