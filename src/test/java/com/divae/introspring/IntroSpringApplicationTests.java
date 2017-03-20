@@ -1,4 +1,4 @@
-package br.com.IntroSpring;
+package com.divae.introspring;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
