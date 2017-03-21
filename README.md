@@ -42,6 +42,7 @@ Wichtige Grundregel: Bei Problemen oder Fragen in der INstallation oder beim Set
 
 # Aufgabenstellung
 1. Lest Euch zunächst im Netz zum MVC Pattern und zu Spring MVC ein
+2. recherchiert, welche Annotationen und Pattern das JPA Framework zur Verfügung stellt
 2. Baut eine weitere Thymeleaf Seite plus Controller, die alle Einträge aus der Tabelle Person als Liste anzeigt
 
     
