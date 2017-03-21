@@ -12,7 +12,7 @@ import com.divae.introspring.repositories.PersonRepository;
 @RequestMapping("/index")
 public class PersonController {
 
-	@Autowired PersonRepository intros;
+	@Autowired PersonRepository persons;
 	
 	@RequestMapping("/create")
 	public String novo() {
@@ -21,9 +21,13 @@ public class PersonController {
 
 	@RequestMapping(method = RequestMethod.POST)
 	public String create(Person person) {
-		intros.save(person);
-		System.out.println(">>>> " + person.getFirstname());
-		return "index";
+		if (person.getFirstname().equals("firstname")) {
+			System.out.println(">>>> wird nicht gespeichert");
+		} else {
+			persons.save(person);
+			System.out.println(">>>> " + person.getFirstname());
+		}
+		return "danke";
 	}
 
 }
