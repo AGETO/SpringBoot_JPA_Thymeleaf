@@ -24,12 +24,13 @@ Wichtige Grundregel: Bei Problemen oder Fragen in der INstallation oder beim Set
 # Projekt Setup 
 1. Git repo clonen
     git clone https://github.com/AGETO/SpringBoot_JPA_Thymeleaf.git
-2. Git Projekt mit Maven bauen
-    mvn clean install
-3. MySQL Datenbank anlegen
+2. MySQL Datenbank anlegen
     - Xampp Dienste starten (Apache, MySQL)
     - phpmyadmin Oberfläche starten http://localhost/phpmyadmin
     - Datenbank spring_boot anlegen
+3. Git Projekt mit Maven bauen
+   mvn clean install oder mit
+   mvn clean compile
 4. Projekt starten
     mvn spring-boot:run
 5. Webapp im Browser öffnen
@@ -40,6 +41,7 @@ Wichtige Grundregel: Bei Problemen oder Fragen in der INstallation oder beim Set
 
 
 # Aufgabenstellung
-1. Baut eine weitere Thymeleaf Seite plus Controller, die alle Einträge aus der Tabelle Person als Liste anzeigt
+1. Lest Euch zunächst im Netz zum MVC Pattern und zu Spring MVC ein
+2. Baut eine weitere Thymeleaf Seite plus Controller, die alle Einträge aus der Tabelle Person als Liste anzeigt
 
     
